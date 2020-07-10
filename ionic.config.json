@@ -1,0 +1,7 @@
+{
+  "name": "AudioBook's",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
