@@ -38,6 +38,8 @@ const Login: React.FC = () => {
         }
       }
       catch(error){
+        load.hidden = true;
+        formelement.hidden = false;
         displayError(error);
       }
   }

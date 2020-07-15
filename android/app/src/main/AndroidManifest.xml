@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.ionic.starter">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.marcos.book">
 
     <application
         android:allowBackup="true"
@@ -12,10 +13,11 @@
 
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
-            android:name="io.ionic.starter.MainActivity"
+            android:name="com.marcos.book.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBarLaunch"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:usesCleartextTraffic="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "AudioBook's",
+  "appId": "com.marcos.book",
+  "appName": "Book's",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
@@ -10,5 +10,5 @@
     }
   },
   "cordova": {},
-  "linuxAndroidStudioPath":"/home/mdjfs/Descargas/android-studio/bin/studio.sh"
+  "linuxAndroidStudioPath": "/home/mdjfs/Descargas/android-studio/bin/studio.sh"
 }

@@ -36,6 +36,8 @@ const Register: React.FC = () => {
             var _response = await fetch(Config.API_ENDPOINT+"login", options);
             var _json  = await _response.json();
             if(_json.message === "error"){
+              load.hidden = true;
+              formelement.hidden = false;
               displayError(_json.error);
             }
             else{
@@ -45,6 +47,8 @@ const Register: React.FC = () => {
           }
         }
         catch(error){
+          load.hidden = true;
+          formelement.hidden = false;
           displayError(error);
         }
     }
