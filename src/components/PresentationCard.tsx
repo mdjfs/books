@@ -7,14 +7,13 @@ import { IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, 
  export const PresentationCard: React.FC = () => {
   return (
     <IonCard>
-        <img src="assets/fancyview.svg" />
+        <img src="assets/fancyview.svg" alt="hello" />
         <IonCardHeader>
         <IonCardSubtitle>¡Organizate!</IonCardSubtitle>
         <IonCardTitle>¿Qué esperas para empezar a anotar cosas?</IonCardTitle>
         </IonCardHeader>
         <IonCardContent>
-            <IonButton color="primary">Crea o Edita</IonButton>
-            <IonButton color="secondary">Ver</IonButton>
+            <IonButton color="primary" expand="block" >Notas</IonButton>
         </IonCardContent>
     </IonCard>
   );
