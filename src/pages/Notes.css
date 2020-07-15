@@ -1,0 +1,19 @@
+
+
+#question{
+    position:relative;
+    text-align: center;
+    top: 30%;
+}
+
+#question .help{
+    zoom: 5;
+}
+
+#question .invert{
+    transform: rotate(180deg);
+}
+
+#question a[class="contrast"]{
+    color: var(--ion-color-secondary);
+}

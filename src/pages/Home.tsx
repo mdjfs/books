@@ -13,7 +13,7 @@ const Home: React.FC = () => {
     toolbar = <Toolbar title={text} mode="logout" />
   }
   else{
-    toolbar = <Toolbar title="AudioBook's Home" mode="full"/>
+    toolbar = <Toolbar title="Book's Home" mode="full"/>
   }
   return (
     <IonPage>
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar >
-            <IonTitle >AudioBook's</IonTitle>
+            <IonTitle >Book's</IonTitle>
           </IonToolbar>
         </IonHeader>
         <PresentationCard />

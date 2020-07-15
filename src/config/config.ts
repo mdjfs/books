@@ -1,0 +1,1 @@
+export const API_ENDPOINT= 'http://46.101.249.154:3000/';

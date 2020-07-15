@@ -3,6 +3,7 @@ import React from 'react';
 import './Register.css';
 import {Toolbar} from '../components/Toolbar';
 import {Tab} from '../components/Tab';
+import * as Config from '../config/config';
 
 const Register: React.FC = () => {
     function displayError(message: string){
@@ -24,7 +25,7 @@ const Register: React.FC = () => {
             body: form
         }
         try{
-          var response = await fetch("http://localhost:3000/register", options);
+          var response = await fetch(Config.API_ENDPOINT+"register", options);
           var json  = await response.json();
           if(json.message === "error"){
             load.hidden = true;
@@ -32,7 +33,7 @@ const Register: React.FC = () => {
             displayError(json.error);
           }
           else{
-            var _response = await fetch("http://localhost:3000/login", options);
+            var _response = await fetch(Config.API_ENDPOINT+"login", options);
             var _json  = await _response.json();
             if(_json.message === "error"){
               displayError(_json.error);
@@ -50,7 +51,7 @@ const Register: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <Toolbar title="AudioBook's Registro" mode="login"/>
+        <Toolbar title="Book's Registro" mode="login"/>
       </IonHeader>
       <IonContent>
         <IonHeader collapse="condense">

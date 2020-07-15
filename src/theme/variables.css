@@ -3,7 +3,8 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
-  --ion-color-primary: #ffdecc;
+
+  --ion-color-primary: #e0bda9;
   --ion-color-primary-rgb: 255,222,204;
   --ion-color-primary-contrast: #000000;
   --ion-color-primary-contrast-rgb: 0,0,0;

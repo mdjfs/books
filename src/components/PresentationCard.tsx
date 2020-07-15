@@ -13,7 +13,7 @@ import { IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, 
         <IonCardTitle>¿Qué esperas para empezar a anotar cosas?</IonCardTitle>
         </IonCardHeader>
         <IonCardContent>
-            <IonButton color="primary" expand="block" >Notas</IonButton>
+            <IonButton color="primary" expand="block" href="notes" >Notas</IonButton>
         </IonCardContent>
     </IonCard>
   );

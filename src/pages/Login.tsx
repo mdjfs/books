@@ -3,6 +3,8 @@ import React from 'react';
 import './Login.css';
 import {Toolbar} from '../components/Toolbar';
 import {Tab} from '../components/Tab';
+import * as Config from '../config/config';
+
 const Login: React.FC = () => {
   function displayError(message: string){
       var error = document.getElementById("error") as HTMLIonTextElement;
@@ -23,7 +25,7 @@ const Login: React.FC = () => {
           body: form
       }
       try{
-        var response = await fetch("http://localhost:3000/login", options);
+        var response = await fetch(Config.API_ENDPOINT+"login", options);
         var json  = await response.json();
         if(json.message === "error"){
           load.hidden = true;
@@ -42,7 +44,7 @@ const Login: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <Toolbar title="AudioBook's Login" mode="register"/>
+        <Toolbar title="Book's Login" mode="register"/>
       </IonHeader>
       <IonContent>
         <IonHeader collapse="condense">
