@@ -1,0 +1,22 @@
+{
+    "reset": [
+        "GRANT ALL ON SCHEMA public TO postgres;",
+        "GRANT ALL ON SCHEMA public TO public;",
+        "DROP SCHEMA public CASCADE;",
+        "CREATE SCHEMA public;",
+        "CREATE TABLE users (id serial PRIMARY KEY NOT NULL, username varchar NOT NULL UNIQUE, email varchar NOT NULL UNIQUE, password varchar NOT NULL);",
+        "CREATE TABLE notes (id serial PRIMARY KEY NOT NULL, title varchar, description TEXT, user_id INTEGER NOT NULL, FOREIGN KEY (user_id) REFERENCES users (id));"
+    ],
+    "insert.user":"INSERT INTO users (username, email, password) VALUES ($1, $2, $3);",
+    "delete.user.id":"DELETE FROM users WHERE id=$1;",
+    "select.user.id":"SELECT *FROM users WHERE id=$1;",
+    "select.user.email":"SELECT *FROM users WHERE email=$1;",
+    "select.user.username":"SELECT *FROM users WHERE username=$1;",
+    "insert.notes":"INSERT INTO notes (title, description, user_id) VALUES ($1, $2, $3);",
+    "update.notes.title.id":"UPDATE notes SET title=$1 WHERE id=$2;",
+    "update.notes.description.id":"UPDATE notes SET description=$1 WHERE id=$2;",
+    "delete.notes.id":"DELETE FROM notes WHERE id=$1;",
+    "select.notes.id":"SELECT *FROM notes WHERE id=$1;",
+    "select.notes-last":"SELECT *FROM notes ORDER BY id desc LIMIT 1",
+    "select.notes.user_id":"SELECT *FROM notes WHERE user_id=$1;"
+}

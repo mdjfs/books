@@ -1,0 +1,22 @@
+{
+  "name": "server_audiobook_app",
+  "version": "0.0.1",
+  "description": "server of audiobook app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Fuenmayor",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.3.0",
+    "util": "^0.12.3"
+  }
+}
